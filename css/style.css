@@ -1,0 +1,156 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+/* Fonts */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: 'Rubik', sans-serif; 
+    /* Rubik, sans-serif */
+    background-color:black;
+    color: white;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: xx-large;
+}
+
+.p{
+    font-size: medium;
+}
+
+/* Header */
+.header{
+    position: sticky;
+    top: 0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    list-style: none;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    transition: all 500ms;
+}
+
+.menu ul li a:hover{
+    color:#ff00bf;
+    transform: scale(1.2);
+}
+
+/* Buttons */
+.button-global{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: inherit;
+    color: white;
+    background-color:#ff00bf;
+    padding: 10px;
+    transition: all 500ms;
+}
+
+.button-global:hover{
+    transform: scale(1.1);
+}
+
+.button-global a{
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+/* SECTIONS */
+.section-global{
+    margin: 20px;
+    padding: 10px;
+}
+
+.section-white{
+    background-color:white;
+    color:black;
+}
+
+.section-black{
+    background-color: black;
+    color: white;
+}
+
+.section-index{
+    display: flex;
+    justify-content: left;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.1fr 1.8fr;
+    grid-template-rows: 0.2fr 0.4fr 0.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagen title"
+      "imagen paragraph"
+      "imagen section-button";
+  }
+  
+  .paragraph { grid-area: paragraph; }
+  
+  .title { grid-area: title; }
+  
+  .section-button { grid-area: section-button; }
+  
+  .imagen { grid-area: imagen; }
+
+/* FOOTER */
+footer{
+    width: 100%;
+}
+
+#footer div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#footer div ul li a{
+    color: white;
+    padding: 20px;
+    transition: all 250ms;
+}
+
+#footer div ul li a:hover{
+    color:#ff00bf;
+    transform: scale(1.1);
+}
+
+/* PROYECTOS */
+
+
+/* DESCARGAS */
+
+.ul-global{
+    line-height: 50px;
+    list-style:none;
+}
